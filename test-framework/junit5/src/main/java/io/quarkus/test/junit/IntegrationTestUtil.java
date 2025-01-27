@@ -75,7 +75,7 @@ public final class IntegrationTestUtil {
                 if (field.getAnnotation(ConfigProperty.class) != null) {
                     throw new JUnitException(
                             "@ConfigProperty is not supported in " + quarkusTestAnnotation
-                                + " tests. Offending field is "
+                                    + " tests. Offending field is "
                                     + field.getDeclaringClass().getTypeName() + "."
                                     + field.getName());
                 }
